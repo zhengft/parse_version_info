@@ -167,8 +167,3 @@ class TestCheckVersionCompat:
         """测试版本兼容检查。"""
         ret = self.check_version_compat('3.14', require='3.14,3.15')
         assert 0 == ret
-
-    def test_basic_07(self):
-        """测试版本兼容检查。"""
-        ret = self.check_version_compat('3.15', require='3.14,3.15')
-        assert 0 == ret

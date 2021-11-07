@@ -12,7 +12,7 @@ def check_compat(version: str, require: str) -> Tuple:
     result = subprocess.run(
         [
             'awk', '-f', 'strip.awk',
-            '-f', 'check_compat.awk',
+            '-f', 'check_version_compat.awk',
             '-v', 'version={0}'.format(version),
             '-v', 'all_require={0}'.format(require)
         ],
